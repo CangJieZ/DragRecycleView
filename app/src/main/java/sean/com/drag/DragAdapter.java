@@ -50,7 +50,7 @@ public class DragAdapter extends RecyclerView.Adapter<DragAdapter.DragHolder> {
     public void onBindViewHolder(final DragHolder holder, final int position) {
         holder.text.setText(list.get(position));
         if (null == show.get(position))
-            holder.del.setVisibility(View.GONE);
+            holder.del.setVisibility(View.INVISIBLE);
         else
             holder.del.setVisibility(View.VISIBLE);
     }

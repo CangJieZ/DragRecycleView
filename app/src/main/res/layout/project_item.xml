@@ -5,20 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:background="@drawable/right_bottom_view"
-    android:gravity="center"
     android:paddingTop="3dp">
 
     <ImageView
         android:id="@+id/del"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:src="@mipmap/del"
-        android:visibility="gone"/>
+        android:layout_margin="3dp"
+        android:visibility="invisible"/>
 
     <ImageView
         android:id="@+id/icon"
+        android:layout_below="@+id/del"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="center"

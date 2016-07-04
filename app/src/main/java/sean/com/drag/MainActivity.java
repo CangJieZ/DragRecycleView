@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements RecycleCallBack {
             mAdapter.setData(mList);
             mAdapter.notifyItemRemoved(position);
         } else {
+            Toast.makeText(MainActivity.this, "当前点击的是" + position, Toast.LENGTH_SHORT).show();
             mAdapter.notifyDataSetChanged();
         }
     }
